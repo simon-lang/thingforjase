@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='format-detection', content='telephone=no')
+    title Image Thing
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='css/main.css')
+    if DEBUG
+      script(src='js/lib.js')
+      script(src='js/app.js')
+    else
+      script(src='js/app.min.js')
+  body
+    h1 Image Thing
+    button Send to Server
+    #output
+    img#image1(src="http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/background-wallpapers-7.jpg")
+    img#image2(src="https://www.google.com.au/images/srpr/logo11w.png")
